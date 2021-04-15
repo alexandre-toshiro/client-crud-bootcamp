@@ -72,6 +72,7 @@ public class ClientService {
 	}
 
 	private void convertDtoToEntity(Client entity, ClientDTO dto) {
+		
 		entity.setName(dto.getName());
 		entity.setCpf(dto.getCpf());
 		entity.setIncome(dto.getIncome());
