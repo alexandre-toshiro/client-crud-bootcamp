@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alexandretoshiro.clientcrud.dto.ClientDTO;
 import com.alexandretoshiro.clientcrud.entities.Client;
 import com.alexandretoshiro.clientcrud.repositories.ClientRepository;
-import com.alexandretoshiro.clientcrud.services.excepetions.ClientNotFoundException;
-import com.alexandretoshiro.clientcrud.services.excepetions.DatabaseException;
+import com.alexandretoshiro.clientcrud.services.exceptions.ClientNotFoundException;
+import com.alexandretoshiro.clientcrud.services.exceptions.DatabaseException;
 
 @RestController
 @RequestMapping(value = "/clients")
@@ -60,7 +60,7 @@ public class ClientService {
 		}
 	}
 	
-	@Transactional
+	
 	public void delete(Long id) {
 		try {
 			clientRepository.deleteById(id);

@@ -1,4 +1,4 @@
-package com.alexandretoshiro.clientcrud.services.excepetions;
+package com.alexandretoshiro.clientcrud.services.exceptions;
 
 public class DatabaseException extends RuntimeException {
 
