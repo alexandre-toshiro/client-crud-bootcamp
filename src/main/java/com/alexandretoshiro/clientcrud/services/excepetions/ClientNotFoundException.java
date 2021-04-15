@@ -1,4 +1,4 @@
-package com.alexandretoshiro.clientcrud.services;
+package com.alexandretoshiro.clientcrud.services.excepetions;
 
 public class ClientNotFoundException extends RuntimeException{
 
